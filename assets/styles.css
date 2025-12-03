@@ -1,0 +1,316 @@
+/* ============================================
+   IMPORTAR FUENTES LINDAS DE GOOGLE FONTS
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Pacifico&display=swap');
+
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+
+/* Reseteo de márgenes y padding predeterminados del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* Estilos del body (cuerpo de la página) */
+body {
+    font-family: 'Quicksand', sans-serif; /* Tipografía suave y redondeada */
+    line-height: 1.8; /* Espaciado entre líneas más amplio */
+    color: #4a4a4a; /* Color de texto gris oscuro */
+    background: linear-gradient(to bottom, #fff8f0 0%, #ffe8d6 100%); /* Fondo degradado crema/melocotón */
+    min-height: 100vh; /* Altura mínima de toda la pantalla */
+}
+
+/* ============================================
+   HEADER (CABECERA)
+   ============================================ */
+
+/* Contenedor principal del header */
+header {
+    background: linear-gradient(135deg, #d4a574 0%, #c9935a 50%, #b8814a 100%); /* Degradado marrón cálido/caramelo */
+    color: #fff; /* Color de texto blanco */
+    padding: 2.5rem 1.5rem 2rem; /* Espaciado interno */
+    text-align: center; /* Todo centrado */
+    box-shadow: 0 5px 20px rgba(184, 129, 74, 0.3); /* Sombra marrón suave */
+    border-bottom: 4px solid #c9935a; /* Línea inferior decorativa */
+}
+
+/* Título principal del header (h1) */
+header h1 {
+    font-family: 'Quicksand', cursive; /* Tipografía manuscrita linda */
+    font-size: 2.8rem; /* Tamaño grande */
+    margin-bottom: 1.5rem; /* Espacio inferior */
+    color: #fff; /* Blanco puro */
+    text-shadow: 2px 2px 4px rgba(139, 90, 43, 0.4); /* Sombra marrón suave */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Barra de navegación */
+nav {
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco casi opaco */
+    padding: 0.8rem 1rem; /* Espaciado interno */
+    border-radius: 50px; /* Bordes súper redondeados */
+    max-width: 700px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    box-shadow: 0 4px 15px rgba(184, 129, 74, 0.25); /* Sombra marrón suave */
+}
+
+/* Lista del menú de navegación */
+nav ul {
+    list-style: none; /* Sin puntos de lista */
+    display: flex; /* Flexbox para alineación horizontal */
+    justify-content: center; /* Centrado */
+    gap: 0.5rem; /* Espacio entre elementos */
+    flex-wrap: wrap; /* Se adapta en pantallas pequeñas */
+}
+
+/* Enlaces del menú de navegación */
+nav a {
+    color: #b8814a; /* Color marrón cálido */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 600; /* Texto semi-negrita */
+    padding: 0.6rem 1.5rem; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Efecto hover (al pasar el mouse) en los enlaces */
+nav a:hover {
+    background-color: #fff3e6; /* Fondo crema muy claro */
+    color: #8b5a2b; /* Marrón más oscuro */
+    transform: translateY(-2px); /* Se eleva ligeramente */
+}
+
+/* ============================================
+   MAIN (CONTENIDO PRINCIPAL)
+   ============================================ */
+
+/* Contenedor principal del contenido */
+main {
+    max-width: 1100px; /* Ancho máximo */
+    margin: 2.5rem auto; /* Centrado con márgenes */
+    padding: 3rem 2.5rem; /* Espaciado interno generoso */
+    background-color: #ffffff; /* Fondo blanco puro */
+    border-radius: 25px; /* Bordes muy redondeados */
+    box-shadow: 0 8px 30px rgba(184, 129, 74, 0.15); /* Sombra marrón suave */
+    min-height: 400px; /* Altura mínima */
+}
+
+/* ============================================
+   FOOTER (PIE DE PÁGINA)
+   ============================================ */
+
+/* Contenedor principal del footer */
+footer {
+    background: linear-gradient(135deg, #d4a574 0%, #c9935a 100%); /* Degradado marrón cálido */
+    color: #fff; /* Texto blanco */
+    padding: 3rem 2rem 1.5rem; /* Espaciado interno */
+    margin-top: 4rem; /* Espacio superior */
+    border-top: 4px solid #c9935a; /* Línea superior decorativa */
+}
+
+/* Contenedor de las secciones del footer */
+.footer-container {
+    max-width: 1100px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    display: grid; /* Uso de grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
+    gap: 2.5rem; /* Espacio entre columnas */
+    margin-bottom: 2rem; /* Espacio inferior */
+    text-align: center; /* Todo centrado */
+}
+
+/* Títulos de cada sección del footer */
+.footer-section h3 {
+    font-family: 'Pacifico', cursive; /* Tipografía manuscrita */
+    color: #fff; /* Blanco */
+    margin-bottom: 1rem; /* Espacio inferior */
+    font-size: 1.4rem; /* Tamaño medio */
+    font-weight: 400; /* Peso normal (Pacifico es naturalmente bold) */
+}
+
+/* Párrafos dentro del footer */
+.footer-section p {
+    margin-bottom: 0.7rem; /* Espacio entre párrafos */
+    font-size: 0.95rem; /* Tamaño ligeramente menor */
+    font-weight: 400; /* Peso normal */
+}
+
+/* Listas dentro del footer */
+.footer-section ul {
+    list-style: none; /* Sin puntos de lista */
+}
+
+/* Elementos de lista en el footer */
+.footer-section ul li {
+    margin-bottom: 0.6rem; /* Espacio entre elementos */
+}
+
+/* Enlaces en el footer */
+.footer-section a {
+    color: #fff; /* Blanco */
+    text-decoration: none; /* Sin subrayado */
+    transition: all 0.3s ease; /* Transición suave */
+    font-weight: 500; /* Peso medio */
+}
+
+/* Efecto hover en enlaces del footer */
+.footer-section a:hover {
+    color: #ffecf1; /* Rosa muy claro */
+    transform: scale(1.05); /* Agranda ligeramente */
+}
+
+/* Contenedor de enlaces de redes sociales */
+.social-links {
+    display: flex; /* Flexbox */
+    gap: 1rem; /* Espacio entre enlaces */
+    flex-wrap: wrap; /* Se adapta en pantallas pequeñas */
+    justify-content: center; /* Centrado */
+}
+
+/* Enlaces individuales de redes sociales */
+.social-links a {
+    padding: 0.6rem 1.3rem; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semi-transparente */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 0.9rem; /* Tamaño de fuente */
+    border: 2px solid rgba(255, 255, 255, 0.4); /* Borde blanco semi-transparente */
+}
+
+/* Efecto hover en enlaces de redes sociales */
+.social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.35); /* Fondo más visible */
+    border-color: rgba(255, 255, 255, 0.7); /* Borde más visible */
+}
+
+/* Línea divisoria en el footer */
+.footer-divider {
+    border: none; /* Sin borde predeterminado */
+    height: 2px; /* Altura de la línea */
+    background-color: rgba(255, 255, 255, 0.3); /* Blanco semi-transparente */
+    margin: 2rem auto; /* Márgenes verticales */
+    max-width: 80%; /* Ancho limitado */
+    border-radius: 2px; /* Bordes ligeramente redondeados */
+}
+
+/* Sección inferior del footer (derechos de autor) */
+.footer-bottom {
+    text-align: center; /* Centrado */
+    font-size: 0.9rem; /* Tamaño menor */
+    color: rgba(255, 255, 255, 0.9); /* Blanco casi opaco */
+    font-weight: 400; /* Peso normal */
+}
+
+/* Párrafos en la sección inferior del footer */
+.footer-bottom p {
+    margin: 0.4rem 0; /* Pequeño margen vertical */
+}
+
+/* ============================================
+   RESPONSIVE DESIGN (DISEÑO ADAPTABLE)
+   ============================================ */
+
+/* Media query para tablets (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    /* Reduce el tamaño del título principal */
+    header h1 {
+        font-size: 2.2rem; /* Tamaño menor */
+    }
+
+    /* Ajusta el padding del header */
+    header {
+        padding: 2rem 1.5rem 1.5rem; /* Menos espaciado */
+    }
+
+    /* Reduce el tamaño de los emojis */
+    header h1::before,
+    header h1::after {
+        font-size: 2rem; /* Emojis más pequeños */
+    }
+
+    /* Ajusta la navegación */
+    nav {
+        max-width: 90%; /* Usa más ancho disponible */
+    }
+
+    /* Reduce el espaciado de los enlaces */
+    nav a {
+        padding: 0.5rem 1.2rem; /* Menos espaciado */
+        font-size: 0.95rem; /* Fuente más pequeña */
+    }
+
+    /* Ajusta el main */
+    main {
+        padding: 2rem 1.5rem; /* Menos espaciado */
+        margin: 2rem 1rem; /* Márgenes laterales */
+    }
+
+    /* Ajusta el footer */
+    .footer-container {
+        gap: 2rem; /* Menos espacio entre secciones */
+    }
+}
+
+/* Media query para móviles (pantallas menores a 480px) */
+@media (max-width: 480px) {
+    /* Reduce aún más el título */
+    header h1 {
+        font-size: 1.8rem; /* Tamaño pequeño */
+        letter-spacing: 0; /* Sin espaciado extra */
+    }
+
+    /* Emojis más pequeños en móviles */
+    header h1::before,
+    header h1::after {
+        font-size: 1.6rem; /* Emojis pequeños */
+    }
+
+    /* Ajusta el header */
+    header {
+        padding: 1.5rem 1rem 1rem; /* Espaciado compacto */
+    }
+
+    /* Navegación más compacta */
+    nav {
+        padding: 0.6rem 0.8rem; /* Menos padding */
+        border-radius: 30px; /* Bordes menos redondeados */
+    }
+
+    /* Enlaces más pequeños */
+    nav a {
+        padding: 0.5rem 1rem; /* Espaciado mínimo */
+        font-size: 0.9rem; /* Fuente pequeña */
+    }
+
+    /* Main compacto */
+    main {
+        padding: 1.5rem 1rem; /* Espaciado mínimo */
+        margin: 1.5rem 0.5rem; /* Márgenes pequeños */
+        border-radius: 20px; /* Bordes menos redondeados */
+    }
+
+    /* Footer compacto */
+    footer {
+        padding: 2.5rem 1rem 1rem; /* Menos espaciado */
+    }
+
+    /* Títulos del footer más pequeños */
+    .footer-section h3 {
+        font-size: 1.2rem; /* Tamaño reducido */
+    }
+
+    /* Redes sociales en columna */
+    .social-links {
+        flex-direction: column; /* Apila verticalmente */
+        align-items: center; /* Centra los elementos */
+    }
+
+    /* Enlaces de redes más anchos */
+    .social-links a {
+        width: 80%; /* Ocupa más ancho */
+        text-align: center; /* Texto centrado */
+    }
+}
