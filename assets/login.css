@@ -1,0 +1,125 @@
+/* Estilos específicos para el Login */
+
+/* Centrado vertical del main en la página de login si es posible, o márgenes ajustados */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Para que ocupe buen espacio vertical */
+    background: transparent; /* Dejamos ver el fondo del body */
+    box-shadow: none; /* Quitamos sombra del main general si molesta, o la adaptamos */
+    max-width: 100%;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(184, 129, 74, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid rgba(201, 147, 90, 0.2);
+}
+
+.login-box h2 {
+    font-family: 'Pacifico', cursive;
+    color: #c9935a;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.login-box p {
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+/* Grupos de inputs */
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #8b5a2b;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fffbf8;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #c9935a;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(201, 147, 90, 0.1);
+}
+
+/* Botón de Login */
+.btn-login {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #d4a574 0%, #bb7e43 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(187, 126, 67, 0.3);
+    margin-top: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(187, 126, 67, 0.4);
+    background: linear-gradient(135deg, #dda66e 0%, #aa723b 100%);
+}
+
+.btn-login:active {
+    transform: translateY(1px);
+}
+
+/* Footer del form */
+.login-footer {
+    margin-top: 2rem !important;
+    font-size: 0.9rem;
+}
+
+.login-footer a {
+    color: #c9935a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+    color: #8b5a2b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 2rem 1.5rem;
+        box-shadow: none; /* En móviles muy chicos simplificamos */
+        background: rgba(255,255,255,0.9);
+    }
+    
+    .login-container {
+        padding: 1rem;
+    }
+}
